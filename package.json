@@ -1,0 +1,25 @@
+{
+  "name": "hunger-games",
+  "version": "1.0.0",
+  "description": "A command line hunger games simulator.",
+  "license": "ISC",
+  "author": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js",
+    "test": "tsc && node dist/test.js"
+  },
+  "devDependencies": {
+    "@types/cli-color": "^2.0.6",
+    "@types/node": "^22.10.5",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.7"
+  },
+  "dependencies": {
+    "@kmamal/sdl": "^0.10.7",
+    "canvas": "^3.0.1",
+    "cli-color": "^2.0.4"
+  }
+}
