@@ -30,7 +30,7 @@ export abstract class AbstractTile {
     }
 
     public render(ctx: Canvas.CanvasRenderingContext2D): void {
-        ctx.fillStyle = this.colour.toHex();
+        ctx.fillStyle = this.colour.getHex();
         ctx.fillRect(this.x * (TILE_SIZE.x + TILE_PADDING.x) + WORLD_PADDING.x, this.y * (TILE_SIZE.y + TILE_PADDING.y) + WORLD_PADDING.x, TILE_SIZE.x, TILE_SIZE.y);
     }
 }

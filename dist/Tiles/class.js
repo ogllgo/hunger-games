@@ -30,7 +30,7 @@ class AbstractTile {
         this.colour = colour;
     }
     render(ctx) {
-        ctx.fillStyle = this.colour.toHex();
+        ctx.fillStyle = this.colour.getHex();
         ctx.fillRect(this.x * (tiles_1.TILE_SIZE.x + tiles_1.TILE_PADDING.x) + tiles_1.WORLD_PADDING.x, this.y * (tiles_1.TILE_SIZE.y + tiles_1.TILE_PADDING.y) + tiles_1.WORLD_PADDING.x, tiles_1.TILE_SIZE.x, tiles_1.TILE_SIZE.y);
     }
 }

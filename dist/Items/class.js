@@ -25,7 +25,7 @@ class AbstractItem {
         this.colour = colour;
     }
     render(ctx) {
-        ctx.fillStyle = this.colour.toHex();
+        ctx.fillStyle = this.colour.getHex();
         const x = tiles_1.WORLD_PADDING.x + (this.x + 0.5) * tiles_1.GRID_SIZE;
         const y = tiles_1.WORLD_PADDING.y + (this.y + 0.5) * tiles_1.GRID_SIZE;
         ctx.beginPath();

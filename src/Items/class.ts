@@ -24,7 +24,7 @@ export abstract class AbstractItem {
     }
 
     public render(ctx: Canvas.CanvasRenderingContext2D): void {
-        ctx.fillStyle = this.colour.toHex();
+        ctx.fillStyle = this.colour.getHex();
         const x = WORLD_PADDING.x + (this.x + 0.5) * GRID_SIZE;
         const y = WORLD_PADDING.y + (this.y + 0.5) * GRID_SIZE;
         ctx.beginPath();
